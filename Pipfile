@@ -1,14 +1,24 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
 
-[packages]
-flask = "2.2.2"
-importlib-metadata = "6.0.0"
-importlib-resources = "5.10.0"
-ipdb = "0.13.9"
-pytest = "7.2.0"
+[tool.poetry]
+name = "your_project_name"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <your@email.com>"]
 
-[requires]
-python_full_version = "3.8.13"
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^2.2.2"
+werkzeug = "^2.0.2"  # Explicitly specify a version of Werkzeug that is compatible with Flask
+importlib-metadata = "^6.0.0"
+importlib-resources = "^5.10.0"
+ipdb = "^0.13.9"
+pytest = "^7.2.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["flit_core"]
+build-backend = "flit_core.buildapi"
